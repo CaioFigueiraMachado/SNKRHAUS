@@ -17,7 +17,7 @@ require_once 'includes/header.php';
       <?= logoSH('caixa-sh') ?>
     </div>
     <span class="tag tag-laranja">/ Pedido #<?= str_pad($pd['id'], 5, '0', STR_PAD_LEFT) ?></span>
-    <h1>Pedido confirmado! 🎉</h1>
+    <h1>Pedido confirmado!</h1>
     <p>Obrigado, <?= e(primeiroNome($_SESSION['usuario_nome'])) ?>. Seu par já está sendo preparado (simulação).</p>
     <div class="painel confirmado-info">
       <div class="checkout-item">

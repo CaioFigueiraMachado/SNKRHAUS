@@ -17,16 +17,16 @@ $paginaAtual = basename($_SERVER['PHP_SELF']);
 <body class="<?= e($classeBody ?? '') ?>">
 <div class="marquee-topo">
   <div class="marquee-track">
-    <span>✦ SNKRHAUS / SNEAKERS 100% ORIGINAIS</span>
-    <span>✦ DROPS EXCLUSIVOS TODA SEMANA</span>
-    <span>✦ FRETE GRÁTIS ACIMA DE R$ 999</span>
-    <span>✦ ATÉ 6X SEM JUROS</span>
-    <span>✦ LISBOA · BERLIN · SÃO PAULO</span>
-    <span>✦ SNKRHAUS / SNEAKERS 100% ORIGINAIS</span>
-    <span>✦ DROPS EXCLUSIVOS TODA SEMANA</span>
-    <span>✦ FRETE GRÁTIS ACIMA DE R$ 999</span>
-    <span>✦ ATÉ 6X SEM JUROS</span>
-    <span>✦ LISBOA · BERLIN · SÃO PAULO</span>
+    <span>SNKRHAUS / SNEAKERS 100% ORIGINAIS</span>
+    <span>DROPS EXCLUSIVOS TODA SEMANA</span>
+    <span>FRETE GRÁTIS ACIMA DE R$ 999</span>
+    <span>ATÉ 6X SEM JUROS</span>
+    <span>LISBOA · BERLIN · SÃO PAULO</span>
+    <span>SNKRHAUS / SNEAKERS 100% ORIGINAIS</span>
+    <span>DROPS EXCLUSIVOS TODA SEMANA</span>
+    <span>FRETE GRÁTIS ACIMA DE R$ 999</span>
+    <span>ATÉ 6X SEM JUROS</span>
+    <span>LISBOA · BERLIN · SÃO PAULO</span>
   </div>
 </div>
 <header class="topo">
@@ -34,7 +34,9 @@ $paginaAtual = basename($_SERVER['PHP_SELF']);
     <a href="index.php" class="marca" aria-label="SNKRHAUS - página inicial">
       <?= logoSH() ?><span class="marca-texto">SNKRHAUS</span>
     </a>
-    <button class="menu-toggle" aria-label="Abrir menu" onclick="document.body.classList.toggle('menu-aberto')">☰</button>
+    <button class="menu-toggle" aria-label="Abrir menu" onclick="document.body.classList.toggle('menu-aberto')">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+    </button>
     <nav class="menu">
       <a href="catalogo.php?secao=lancamento">Lançamentos</a>
       <a href="catalogo.php">Tênis</a>
@@ -44,7 +46,9 @@ $paginaAtual = basename($_SERVER['PHP_SELF']);
     </nav>
     <form class="busca" action="catalogo.php" method="get">
       <input type="search" name="q" placeholder="Marca, modelo..." value="<?= e($_GET['q'] ?? '') ?>">
-      <button type="submit" aria-label="Buscar">⌕</button>
+      <button type="submit" aria-label="Buscar" style="display:inline-flex;align-items:center;justify-content:center;">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+      </button>
     </form>
     <div class="topo-acoes">
       <?php if (logado()): ?>

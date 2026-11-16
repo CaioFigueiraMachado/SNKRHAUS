@@ -124,9 +124,9 @@ require_once 'includes/header.php';
       <div class="painel">
         <h2>3. Pagamento</h2>
         <div class="pagamentos">
-          <label class="pag"><input type="radio" name="pagamento" value="pix" <?= $pagamento === 'pix' ? 'checked' : '' ?>><span>⚡ PIX</span></label>
-          <label class="pag"><input type="radio" name="pagamento" value="cartao" <?= $pagamento === 'cartao' ? 'checked' : '' ?>><span>💳 Cartão</span></label>
-          <label class="pag"><input type="radio" name="pagamento" value="boleto" <?= $pagamento === 'boleto' ? 'checked' : '' ?>><span>🧾 Boleto</span></label>
+          <label class="pag"><input type="radio" name="pagamento" value="pix" <?= $pagamento === 'pix' ? 'checked' : '' ?>><span>PIX</span></label>
+          <label class="pag"><input type="radio" name="pagamento" value="cartao" <?= $pagamento === 'cartao' ? 'checked' : '' ?>><span>Cartão</span></label>
+          <label class="pag"><input type="radio" name="pagamento" value="boleto" <?= $pagamento === 'boleto' ? 'checked' : '' ?>><span>Boleto</span></label>
         </div>
         <div class="dados-cartao" data-cartao>
           <label>Número do cartão (fictício)<input type="text" name="cartao_numero" value="<?= e($_POST['cartao_numero'] ?? '') ?>" placeholder="0000 0000 0000 0000" maxlength="23"></label>
@@ -142,7 +142,7 @@ require_once 'includes/header.php';
       <div class="resumo-linha total"><span>Total</span><strong data-total><?= preco($sub + $frete) ?></strong></div>
       <button type="submit" class="btn btn-laranja btn-bloco">Confirmar pedido</button>
       <a href="produto.php?id=<?= (int)$p['id'] ?>" class="btn btn-contorno-escuro btn-bloco">Voltar</a>
-      <p class="mini-aviso">🔒 Compra simulada para fins acadêmicos.</p>
+      <p class="mini-aviso">Compra simulada para fins acadêmicos.</p>
     </aside>
   </form>
 </section>

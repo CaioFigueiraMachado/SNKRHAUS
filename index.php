@@ -25,7 +25,7 @@ foreach ($categorias as $c) {
 <section class="container boas-vindas">
   <div>
     <span class="tag">/ Área do cliente</span>
-    <h1>Olá, <?= e(primeiroNome($_SESSION['usuario_nome'])) ?>! 👟</h1>
+    <h1>Olá, <?= e(primeiroNome($_SESSION['usuario_nome'])) ?>!</h1>
     <p>Bem-vindo de volta à SNKRHAUS. Confira os drops que separamos para você.</p>
   </div>
   <div class="boas-vindas-acoes">
@@ -101,7 +101,7 @@ foreach ($categorias as $c) {
 </section>
 
 <section class="container secao">
-  <div class="secao-titulo"><h2>🔥 Mais vendidos da semana</h2><a href="catalogo.php?secao=mais_vendido">Ver todos →</a></div>
+  <div class="secao-titulo"><h2>Mais vendidos da semana</h2><a href="catalogo.php?secao=mais_vendido">Ver todos →</a></div>
   <div class="trilho" data-trilho>
     <?php foreach ($maisVendidos as $p) echo cardProduto($p); ?>
   </div>

@@ -16,7 +16,7 @@ require_once 'includes/header.php';
   <nav class="trilha"><a href="index.php">Início</a> / <a href="catalogo.php?categoria=<?= urlencode($p['categoria']) ?>"><?= e($p['categoria']) ?></a> / <span><?= e($p['nome']) ?></span></nav>
   <div class="produto-grid">
     <div class="produto-foto">
-      <span class="selo-original">✔ 100% Original</span>
+      <span class="selo-original">100% Original</span>
       <?= fotoProduto($p, 'flutua') ?>
     </div>
     <div class="produto-info">
@@ -52,9 +52,9 @@ require_once 'includes/header.php';
         <?php endif; ?>
       </form>
       <ul class="beneficios">
-        <li>📦 Frete grátis acima de R$ 999</li>
-        <li>🔁 Troca grátis em até 30 dias</li>
-        <li>🛡️ Autenticidade garantida, direto da marca</li>
+        <li>Frete grátis acima de R$ 999</li>
+        <li>Troca grátis em até 30 dias</li>
+        <li>Autenticidade garantida, direto da marca</li>
       </ul>
     </div>
   </div>

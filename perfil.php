@@ -116,11 +116,11 @@ require_once 'includes/header.php';
       <form method="post" enctype="multipart/form-data" class="form-avatar" id="formAvatar">
         <input type="hidden" name="acao" value="foto">
         <label for="inputFoto" class="btn-trocar-foto" title="Escolher nova foto">
-          📷 Trocar Foto
+          Trocar Foto
         </label>
         <input type="file" name="foto" id="inputFoto" accept="image/jpeg,image/png,image/webp" style="display:none;" onchange="previewEEnviar(this)">
         <?php if (!empty($u['foto'])): ?>
-          <button type="submit" name="remover_foto" value="1" class="btn-remover-foto" title="Remover foto atual" onclick="return confirm('Deseja remover sua foto de perfil?')">✕</button>
+          <button type="submit" name="remover_foto" value="1" class="btn-remover-foto" title="Remover foto atual" onclick="return confirm('Deseja remover sua foto de perfil?')">×</button>
         <?php endif; ?>
       </form>
     </div>
@@ -128,9 +128,9 @@ require_once 'includes/header.php';
       <span class="tag tag-laranja">// ID: <?= str_pad($u['id'], 4, '0', STR_PAD_LEFT) ?> · <?= $u['tipo'] === 'admin' ? 'ADMINISTRADOR' : 'COMMUNITY MEMBER' ?></span>
       <h1><?= e($u['nome']) ?></h1>
       <p class="perfil-hero-meta">
-        <span>✉ <?= e($u['email']) ?></span>
-        <?php if (!empty($u['telefone'])): ?><span>📞 <?= e($u['telefone']) ?></span><?php endif; ?>
-        <span>✦ Membro desde <?= date('d/m/Y', strtotime($u['criado_em'])) ?></span>
+        <span><?= e($u['email']) ?></span>
+        <?php if (!empty($u['telefone'])): ?><span><?= e($u['telefone']) ?></span><?php endif; ?>
+        <span>Membro desde <?= date('d/m/Y', strtotime($u['criado_em'])) ?></span>
       </p>
     </div>
     <div class="perfil-hero-badge">
